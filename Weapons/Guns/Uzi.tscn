@@ -1,0 +1,57 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Weapons/BulletSpawns/BulletSpawnCenter.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Weapons/Gun.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Weapons/GunMaterial.tres" type="Material" id=3]
+[ext_resource path="res://Weapons/Guns/Icons/Icon-Uzi.png" type="Texture" id=4]
+
+[sub_resource type="CubeMesh" id=1]
+
+[node name="Gun" instance=ExtResource( 2 )]
+gun_name = "Uzi"
+icon = ExtResource( 4 )
+BulletSpawns = [ ExtResource( 1 ) ]
+millis_between_shots = 50
+mag_capacity = 10
+reload_time = 0.85
+
+[node name="MeshInstance" parent="Mesh" index="0"]
+transform = Transform( 0.823617, 0, -1.76216e-09, 0, 0.26563, 0, -7.70996e-09, 0, 0.228557, -0.330808, 0, -1.44601e-08 )
+
+[node name="MeshInstance4" parent="Mesh" index="1"]
+transform = Transform( 0.134267, 0, 0, 0, 0.116721, 0, 0, 0, 0.084365, 0.568934, 0.0509405, -2.00616e-08 )
+
+[node name="MeshInstance2" parent="Mesh" index="2"]
+transform = Transform( 0.00168249, -0.265628, 5.60588e-10, 0.399997, 0.00111729, 7.03461e-09, -8.0117e-09, -6.24176e-09, 0.149468, -0.61762, -0.548584, 1.83898e-08 )
+
+[node name="MeshInstance3" parent="Mesh" index="3"]
+transform = Transform( -0.207769, -0.249639, 0, 0.571398, -0.0907723, 0, 0, 0, 0.163362, -0.110238, -0.41845, -2.00616e-08 )
+visible = false
+
+[node name="Muzzle" parent="Mesh" index="4"]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0.712401, 0, -3.33343e-08 )
+
+[node name="MeshInstance5" type="MeshInstance" parent="Mesh" index="5"]
+transform = Transform( 0.1, 0, -2.89482e-09, 0, 0.217706, 0, -2.89482e-09, 0, 0.166226, -1.20909, 0, -5.2851e-08 )
+mesh = SubResource( 1 )
+material/0 = ExtResource( 3 )
+
+[node name="MeshInstance7" type="MeshInstance" parent="Mesh" index="6"]
+transform = Transform( 0.0526491, 0, 1.32385e-09, 0, 0.0853388, 0, 1.32385e-09, 0, 0.0223629, 0.304648, 0.278232, 1.33166e-08 )
+mesh = SubResource( 1 )
+material/0 = ExtResource( 3 )
+
+[node name="MeshInstance9" type="MeshInstance" parent="Mesh" index="7"]
+transform = Transform( 0.0526491, 0, 1.00978e-09, 0, 0.0853388, 0, 1.00978e-09, 0, 0.029548, -1.01111, 0.273117, -0.0541822 )
+mesh = SubResource( 1 )
+material/0 = ExtResource( 3 )
+
+[node name="MeshInstance10" type="MeshInstance" parent="Mesh" index="8"]
+transform = Transform( 0.0526491, 0, 1.00978e-09, 0, 0.0853388, 0, 1.00978e-09, 0, 0.029548, -1.01111, 0.273117, 0.0560098 )
+mesh = SubResource( 1 )
+material/0 = ExtResource( 3 )
+
+[node name="MeshInstance6" type="MeshInstance" parent="Mesh" index="9"]
+transform = Transform( 0.1, 0, -4.32344e-09, 0, 0.242204, 0, -4.32344e-09, 0, 0.198909, -1.37888, 0, -6.02726e-08 )
+mesh = SubResource( 1 )
+material/0 = ExtResource( 3 )

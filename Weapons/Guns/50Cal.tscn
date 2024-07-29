@@ -1,0 +1,55 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Weapons/Gun.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Weapons/GunMaterial.tres" type="Material" id=2]
+[ext_resource path="res://Weapons/Guns/Icons/Icon-50Cal.png" type="Texture" id=3]
+
+[sub_resource type="CubeMesh" id=1]
+
+[node name="Gun" instance=ExtResource( 1 )]
+gun_name = "50 Calibre"
+icon = ExtResource( 3 )
+millis_between_shots = 60
+mag_capacity = 80
+reload_time = 3.0
+
+[node name="MeshInstance" parent="Mesh" index="0"]
+transform = Transform( 1, 0, 0, 0, 0.383013, 0, 0, 0, 0.228557, -0.338823, 0, -1.48104e-08 )
+
+[node name="MeshInstance4" parent="Mesh" index="1"]
+transform = Transform( 0.873808, 0, 2.03119e-08, 0, 0.116721, 0, 3.23264e-08, 0, 0.084365, 2.67965, 0.118705, 7.22008e-08 )
+
+[node name="MeshInstance2" parent="Mesh" index="2"]
+transform = Transform( 0.982435, -3.58882e-16, 7.36018e-09, 0, 0.26563, -7.06438e-09, 3.05801e-08, 8.21027e-09, 0.228557, 1.35037, 0.0536839, 1.04413e-07 )
+
+[node name="MeshInstance3" parent="Mesh" index="3"]
+transform = Transform( -0.207769, -0.0775997, 0, 0.571398, -0.0282164, 0, 0, 0, 0.0879431, 2.22825, -0.680592, 1.1367e-07 )
+visible = false
+
+[node name="Muzzle" parent="Mesh" index="4"]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 3.57887, 0.124017, 9.19631e-08 )
+
+[node name="MeshInstance5" type="MeshInstance" parent="Mesh" index="5"]
+transform = Transform( 0.079766, 0, 0, 0, 0.533319, -0.0179997, 0, 0.142902, 0.067176, 2.174, -0.672, -0.2 )
+mesh = SubResource( 1 )
+material/0 = ExtResource( 2 )
+
+[node name="MeshInstance6" type="MeshInstance" parent="Mesh" index="6"]
+transform = Transform( 0.079766, 0, 0, 0, 0.533319, 0.0179997, 0, -0.142902, 0.067176, 2.174, -0.672, 0.2 )
+mesh = SubResource( 1 )
+material/0 = ExtResource( 2 )
+
+[node name="MeshInstance7" type="MeshInstance" parent="Mesh" index="7"]
+transform = Transform( 0.079766, 0, -1.54994e-09, 0, 0.0552132, 0, -1.77771e-09, 0, 0.105004, 2.174, -1.23987, 0.332619 )
+mesh = SubResource( 1 )
+material/0 = ExtResource( 2 )
+
+[node name="MeshInstance8" type="MeshInstance" parent="Mesh" index="8"]
+transform = Transform( 0.079766, 0, -1.54994e-09, 0, 0.0552132, 0, -1.77771e-09, 0, 0.105004, 2.174, -1.23987, -0.345503 )
+mesh = SubResource( 1 )
+material/0 = ExtResource( 2 )
+
+[node name="MeshInstance9" type="MeshInstance" parent="Mesh" index="9"]
+transform = Transform( 0.374247, 0, -4.12619e-09, 0, 0.435625, 0, -4.73257e-09, 0, 0.420692, 0.111486, -0.317865, 0.324087 )
+mesh = SubResource( 1 )
+material/0 = ExtResource( 2 )

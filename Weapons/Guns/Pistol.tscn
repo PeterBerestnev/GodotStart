@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Weapons/Gun.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Weapons/BulletSpawns/BulletSpawnCenter.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Weapons/Guns/Icons/Icon-Pistol.png" type="Texture" id=3]
+
+[node name="Gun" instance=ExtResource( 1 )]
+gun_name = "Pistol"
+icon = ExtResource( 3 )
+BulletSpawns = [ ExtResource( 2 ) ]
+fire_mode = 0
+mag_capacity = 6
+
+[node name="MeshInstance" parent="Mesh" index="0"]
+transform = Transform( 0.637876, 0, -3.61782e-09, 0, 0.26563, 0, -1.5829e-08, 0, 0.228557, -0.523936, 0, -2.2902e-08 )
+
+[node name="MeshInstance4" parent="Mesh" index="1"]
+transform = Transform( 0.134267, 0, 0, 0, 0.116721, 0, 0, 0, 0.084365, 0.233799, 0.0509405, -3.47108e-08 )
+
+[node name="MeshInstance2" parent="Mesh" index="2"]
+transform = Transform( 0.0968772, -0.257722, -1.42554e-09, 0.388092, 0.0643338, 5.14312e-09, -8.12882e-09, -3.05512e-09, 0.228557, -1.03833, -0.293609, 0 )
+
+[node name="MeshInstance3" parent="Mesh" index="3"]
+visible = false
+
+[node name="Muzzle" parent="Mesh" index="4"]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0.378009, 0, -4.7951e-08 )
